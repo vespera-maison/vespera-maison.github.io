@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contatti — Vespera Maison</title>
+  <meta name="description" content="Contatta Vespera Maison per informazioni su Bosa e Limac Design. Agente di commercio per Emilia-Romagna e Marche.">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar" class="scrolled">
+    <a class="nav-brand" href="index.html">Vespera<span>.</span>Maison</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aziende.html">Aziende</a></li>
+      <li><a href="contatti.html" class="active">Contatti</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTACTS LAYOUT -->
+  <main class="contacts-page">
+
+    <!-- FORM COLUMN -->
+    <div class="contacts-form-col">
+      <p class="section-label">Scrivici</p>
+      <h1 style="font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 12px;">
+        Iniziamo<br><em>una conversazione.</em>
+      </h1>
+      <p style="color: var(--tortora); font-size:0.88rem; margin-bottom: 48px; line-height:1.8;">
+        Compila il modulo per richiedere informazioni su prodotti, disponibilità 
+        nelle tue zone o condizioni commerciali. Ti risponderemo entro 48 ore.
+      </p>
+
+      <!-- FORMSPREE FORM — sostituisci YOUR_FORM_ID con il tuo ID Formspree -->
+      <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px;">
+          <div class="form-group">
+            <label class="form-label" for="nome">Nome *</label>
+            <input class="form-input" type="text" id="nome" name="nome" required placeholder="Il tuo nome" />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="cognome">Cognome *</label>
+            <input class="form-input" type="text" id="cognome" name="cognome" required placeholder="Il tuo cognome" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="email">Email *</label>
+          <input class="form-input" type="email" id="email" name="email" required placeholder="la.tua@email.com" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="azienda">Azienda / Showroom</label>
+          <input class="form-input" type="text" id="azienda" name="azienda" placeholder="Nome della tua azienda (facoltativo)" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="interesse">Interesse</label>
+          <select class="form-select" id="interesse" name="interesse">
+            <option value="">— Seleziona un'azienda —</option>
+            <option value="bosa">Bosa</option>
+            <option value="limac">Limac Design</option>
+            <option value="entrambe">Entrambe le aziende</option>
+            <option value="generale">Informazioni generali</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="messaggio">Messaggio *</label>
+          <textarea class="form-textarea" id="messaggio" name="messaggio" required
+            placeholder="Descrivi la tua richiesta, la tua zona di riferimento e come possiamo aiutarti…"></textarea>
+        </div>
+
+        <!-- Honeypot anti-spam -->
+        <input type="text" name="_gotcha" style="display:none" />
+        <input type="hidden" name="_subject" value="Nuova richiesta — Vespera Maison" />
+
+        <div class="form-submit-row">
+          <button type="submit" class="btn btn-dark">Invia il messaggio</button>
+          <p class="form-success" id="formSuccess">
+            ✓ Messaggio inviato. Ti risponderemo presto.
+          </p>
+        </div>
+
+      </form>
+    </div>
+
+    <!-- INFO COLUMN -->
+    <div class="contacts-info-col">
+      <p class="section-label">Informazioni</p>
+      <h2>Vespera<br>Maison.</h2>
+      <p>
+        Agente di commercio specializzato nel settore dell'arredamento e del design d'interni. 
+        Rappresentiamo marchi italiani d'eccellenza con focus su Emilia-Romagna e Marche.
+      </p>
+
+      <div class="info-block">
+        <p class="info-block-label">Email</p>
+        <p class="info-block-value">
+          <a href="mailto:vespera.maison@outlook.com">vespera.maison@outlook.com</a>
+        </p>
+      </div>
+
+      <div class="info-divider"></div>
+
+      <div class="info-block">
+        <p class="info-block-label">Zone coperte</p>
+        <p class="info-block-value">Emilia-Romagna</p>
+      </div>
+
+      <div class="info-block" style="margin-top:-16px;">
+        <p class="info-block-label">&nbsp;</p>
+        <p class="info-block-value">Marche</p>
+      </div>
+
+      <div class="info-divider"></div>
+
+      <div class="info-block">
+        <p class="info-block-label">Aziende rappresentate</p>
+        <p class="info-block-value">
+          <a href="https://www.bosatrade.com/" target="_blank" rel="noopener"
+             style="display:block; margin-bottom:8px;">
+            Bosa →
+          </a>
+          <a href="https://www.limacdesign.com/" target="_blank" rel="noopener">
+            Limac Design →
+          </a>
+        </p>
+      </div>
+
+      <div class="info-divider"></div>
+
+      <div class="info-block">
+        <p class="info-block-label">Professionista</p>
+        <p class="info-block-value">Giovanna Nicoloro</p>
+      </div>
+
+      <div class="info-block" style="margin-top:4px;">
+        <p class="info-block-label">Esperienza</p>
+        <p class="info-block-value">30+ anni nel settore</p>
+      </div>
+
+      <!-- Decorative quote -->
+      <div style="margin-top: 56px; padding-top: 40px; border-top: 1px solid rgba(202,192,184,0.15);">
+        <p style="font-family: var(--font-display); font-size: 1.3rem; font-style: italic; color: var(--rosa-lt); line-height: 1.5;">
+          &ldquo;Home is a feeling.&rdquo;
+        </p>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <span class="footer-brand">Vespera<span>.</span>Maison</span>
+    <span class="footer-copy">&copy; 2025 Vespera Maison — Giovanna Nicoloro. Tutti i diritti riservati.</span>
+  </footer>
+
+  <script>
+    // Nav
+    document.getElementById('navToggle').addEventListener('click', () => {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+
+    // Form AJAX (Formspree)
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = form.querySelector('button[type="submit"]');
+      btn.textContent = 'Invio in corso…';
+      btn.disabled = true;
+
+      try {
+        const resp = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        });
+        if (resp.ok) {
+          form.reset();
+          document.getElementById('formSuccess').classList.add('show');
+          btn.textContent = 'Messaggio inviato ✓';
+        } else {
+          btn.textContent = 'Errore — riprova';
+          btn.disabled = false;
+        }
+      } catch {
+        btn.textContent = 'Errore — riprova';
+        btn.disabled = false;
+      }
+    });
+  </script>
+
+</body>
+</html>

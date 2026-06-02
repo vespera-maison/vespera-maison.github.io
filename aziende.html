@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aziende — Vespera Maison</title>
+  <meta name="description" content="Scopri le aziende rappresentate da Vespera Maison: Bosa e Limac Design. Eccellenza italiana nell'arredamento e nel design.">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a class="nav-brand" href="index.html">Vespera<span>.</span>Maison</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aziende.html" class="active">Aziende</a></li>
+      <li><a href="contatti.html">Contatti</a></li>
+    </ul>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="container">
+      <p class="section-label">Portfolio</p>
+      <h1>Le aziende<br><em>rappresentate.</em></h1>
+      <p>
+        Una selezione curata di marchi italiani d'eccellenza, scelti per la qualità, 
+        l'identità e la capacità di trasformare ogni spazio in un'esperienza.
+      </p>
+
+      <!-- FILTER BAR -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">Tutte</button>
+        <button class="filter-btn" data-filter="ceramica">Ceramica &amp; Arte</button>
+        <button class="filter-btn" data-filter="illuminazione">Illuminazione</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- BRANDS -->
+  <section class="brands-section">
+    <div class="container">
+
+      <!-- BOSA -->
+      <div class="brand-detail-card fade-up" id="bosa" data-category="ceramica">
+        <div class="brand-detail-info">
+          <div>
+            <p class="brand-detail-tag">Ceramica &amp; Arte</p>
+            <h2 class="brand-detail-name">Bosa</h2>
+            <p class="brand-detail-desc">
+              Bosa è una manifattura di ceramica artigianale fondata nel 1976 a Malo, in Veneto. 
+              Da oltre quarant'anni produce oggetti d'arredo che uniscono la tradizione ceramica 
+              italiana alla visione creativa di designer internazionali — da Jaime Hayon a 
+              Marcel Wanders, fino a Ludovica e Roberto Palomba.
+            </p>
+            <p class="brand-detail-desc">
+              I prodotti Bosa sono sculture che abitano gli spazi: vasi, figure, complementi 
+              d'arredo realizzati a mano con tecniche tramandate e un'attenzione ossessiva 
+              alla qualità delle finiture. Ogni pezzo racconta una storia e porta con sé 
+              l'inconfondibile carattere dell'eccellenza artigianale italiana.
+            </p>
+          </div>
+          <div>
+            <div class="brand-detail-meta">
+              <div>
+                <p class="meta-item-label">Settore</p>
+                <p class="meta-item-value">Ceramica d'autore</p>
+              </div>
+              <div>
+                <p class="meta-item-label">Origine</p>
+                <p class="meta-item-value">Malo, Veneto — IT</p>
+              </div>
+              <div>
+                <p class="meta-item-label">Zone coperte</p>
+                <p class="meta-item-value">Emilia-Romagna &amp; Marche</p>
+              </div>
+              <div>
+                <p class="meta-item-label">Fondazione</p>
+                <p class="meta-item-value">1976</p>
+              </div>
+            </div>
+            <div style="display:flex; gap:16px; flex-wrap:wrap;">
+              <a href="https://www.bosatrade.com/" target="_blank" rel="noopener" class="btn btn-dark">
+                Visita il sito ufficiale
+              </a>
+              <a href="contatti.html" class="btn btn-outline">Richiedi info</a>
+            </div>
+          </div>
+        </div>
+        <div class="brand-detail-visual">
+          <span class="brand-visual-letter">B</span>
+          <div class="brand-visual-accent"></div>
+        </div>
+      </div>
+
+      <!-- LIMAC -->
+      <div class="brand-detail-card fade-up" id="limac" data-category="illuminazione">
+        <div class="brand-detail-visual dark">
+          <span class="brand-visual-letter">L</span>
+          <div class="brand-visual-accent" style="background: radial-gradient(circle, var(--viola) 0%, transparent 70%);"></div>
+        </div>
+        <div class="brand-detail-info">
+          <div>
+            <p class="brand-detail-tag">Illuminazione &amp; Design</p>
+            <h2 class="brand-detail-name">Limac Design</h2>
+            <p class="brand-detail-desc">
+              Limac Design è un'azienda italiana specializzata nella progettazione e produzione 
+              di sistemi di illuminazione dal forte carattere contemporaneo. I suoi prodotti 
+              si distinguono per la qualità dei materiali, la cura del dettaglio e la capacità 
+              di integrarsi armoniosamente in contesti residenziali e contract di alto livello.
+            </p>
+            <p class="brand-detail-desc">
+              La filosofia Limac parte dalla luce come elemento architettonico: non un semplice 
+              accessorio, ma un componente che definisce l'atmosfera, valorizza le superfici e 
+              trasforma la percezione degli spazi. Una luce pensata per emozionare.
+            </p>
+          </div>
+          <div>
+            <div class="brand-detail-meta">
+              <div>
+                <p class="meta-item-label">Settore</p>
+                <p class="meta-item-value">Illuminazione</p>
+              </div>
+              <div>
+                <p class="meta-item-label">Origine</p>
+                <p class="meta-item-value">Italia</p>
+              </div>
+              <div>
+                <p class="meta-item-label">Zone coperte</p>
+                <p class="meta-item-value">Emilia-Romagna &amp; Marche</p>
+              </div>
+              <div>
+                <p class="meta-item-label">Mercato</p>
+                <p class="meta-item-value">Residenziale &amp; Contract</p>
+              </div>
+            </div>
+            <div style="display:flex; gap:16px; flex-wrap:wrap;">
+              <a href="https://www.limacdesign.com/" target="_blank" rel="noopener" class="btn btn-dark">
+                Visita il sito ufficiale
+              </a>
+              <a href="contatti.html" class="btn btn-outline">Richiedi info</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA BOTTOM -->
+  <section class="contacts-strip" style="padding: 72px 48px;">
+    <div class="container" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:32px;">
+      <div>
+        <p class="section-label">Vuoi saperne di più?</p>
+        <h2 style="color:var(--crema);">Siamo a tua disposizione.</h2>
+        <p style="margin-top:12px;">Contattaci per prezzi, condizioni commerciali e disponibilità nelle tue zone.</p>
+      </div>
+      <a href="contatti.html" class="btn btn-rosa">Contattaci ora</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span class="footer-brand">Vespera<span>.</span>Maison</span>
+    <span class="footer-copy">&copy; 2025 Vespera Maison — Giovanna Nicoloro. Tutti i diritti riservati.</span>
+  </footer>
+
+  <script>
+    // Nav
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 20);
+    });
+    document.getElementById('navToggle').addEventListener('click', () => {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+
+    // Filter
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.brand-detail-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const f = btn.dataset.filter;
+        cards.forEach(card => {
+          if (f === 'all' || card.dataset.category === f) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+      });
+    });
+
+    // Anchor scroll
+    if (window.location.hash) {
+      setTimeout(() => {
+        const el = document.querySelector(window.location.hash);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 300);
+    }
+
+    // Fade-up
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+  </script>
+
+</body>
+</html>
